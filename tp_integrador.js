@@ -13,8 +13,8 @@ let valorCuota = 0;
 const codigoDescuento = "ADALOVELACE";
 let codigoDescuentoIngresado = "";
 let descuento = 0.10;
-let totalDescuento;
-let valorCuotaDescuento;
+let totalDescuento = 0;
+let valorCuotaDescuento = 0;
 
 
 
