@@ -67,7 +67,7 @@ Cantidad de cuotas ${cantCuotas}; valor de cada cuota ${valorCuota}`);
 respuestaDescuento = prompt(`${nombre}, ¿tenés un código de descuento?`);
 respuestaDescuento ==="SÍ" && (codigoDescuentoIngresado = prompt("Ingresá el código:"));
 console.log(codigoDescuentoIngresado);
-(codigoDescuentoIngresado !== codigoDescuento) && (codigoDescuentoIngresado = prompt("Código incorrecto. Verificá y volvé a ingresarlo:"));
+(respuestaDescuento ==="SÍ" && (codigoDescuentoIngresado !== codigoDescuento)) && (codigoDescuentoIngresado = prompt("Código incorrecto. Verificá y volvé a ingresarlo:"));
 
 
 totalDescuento = total - (total * descuento);
@@ -103,19 +103,4 @@ Total con descuento: AR$ ${totalDescuento}`);
 alert(`${nombre}, muchas gracias por tu compra.
 
 Que disfrutes tu lectura. ♥`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//ARREGLAR CANT. CUOTAS QUE DA INFINITY CUANDO NO SE PAGA CON TARJETA
 
