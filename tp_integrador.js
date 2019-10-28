@@ -5,7 +5,7 @@ let precioProd1 = 1350;
 let precioProd2 = 1400;
 let cantidad1 = 0;
 let cantidad2 = 0;
-let cantCuotas = 1;
+let cantCuotas = 0;
 let subtotal1 = 0;
 let subtotal2 = 0;
 let total = 0;
@@ -18,7 +18,7 @@ let valorCuotaDescuento = 0;
 
 
 
-const nombre = prompt(`¡Hola, bienvenida a nuestra librería virtual 📚!
+const nombre = prompt(`¡Hola, bienvenida a nuestra librería virtual 📚, ${nombreTienda}!
 
 Por favor, escribí tu nombre:`);
 
@@ -76,18 +76,27 @@ valorCuotaDescuento = totalDescuento / cantCuotas;
 
 
 
-alert(`Detalle de tu compra: 
+cantCuotas !==0 && alert(`Detalle de tu compra: 
 
 ${producto1}, AR$ ${precioProd1} x ${cantidad1} = AR$ ${subtotal1}
-
 ${producto2}, AR$ ${precioProd2} x ${cantidad2} = AR$ ${subtotal2}
 
 Total de tu compra: AR$ ${total}
 Tu descuento es ${descuento * 100}%
 Total con descuento: AR$ ${totalDescuento}
 
-
 Cantidad de cuotas ${cantCuotas}; valor de cada cuota AR$ ${valorCuotaDescuento}`);
+
+
+
+cantCuotas ===0 && alert(`Detalle de tu compra: 
+
+${producto1}, AR$ ${precioProd1} x ${cantidad1} = AR$ ${subtotal1}
+${producto2}, AR$ ${precioProd2} x ${cantidad2} = AR$ ${subtotal2}
+
+Total de tu compra: AR$ ${total}
+Tu descuento es ${descuento * 100}%
+Total con descuento: AR$ ${totalDescuento}`);
 
 
 alert(`${nombre}, muchas gracias por tu compra.
