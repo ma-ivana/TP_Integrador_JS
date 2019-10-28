@@ -87,7 +87,7 @@ Tu descuento es ${descuento * 100}%
 Total con descuento: AR$ ${totalDescuento}
 
 
-Cantidad de cuotas ${cantCuotas}; valor de cada cuota AR${valorCuotaDescuento}`);
+Cantidad de cuotas ${cantCuotas}; valor de cada cuota AR$ ${valorCuotaDescuento}`);
 
 
 alert(`${nombre}, muchas gracias por tu compra.
