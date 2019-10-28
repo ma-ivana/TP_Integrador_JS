@@ -15,6 +15,7 @@ let codigoDescuentoIngresado = "";
 let descuento = 0.10;
 let totalDescuento = 0;
 let valorCuotaDescuento = 0;
+let respuestaDescuento = "";
 
 
 
@@ -63,7 +64,7 @@ Total de tu compra: AR$ ${total}
 
 Cantidad de cuotas ${cantCuotas}; valor de cada cuota ${valorCuota}`);
 
-let respuestaDescuento = prompt(`${nombre}, ¿tenés un código de descuento?`);
+respuestaDescuento = prompt(`${nombre}, ¿tenés un código de descuento?`);
 respuestaDescuento ==="SÍ" && (codigoDescuentoIngresado = prompt("Ingresá el código:"));
 console.log(codigoDescuentoIngresado);
 (codigoDescuentoIngresado !== codigoDescuento) && (codigoDescuentoIngresado = prompt("Código incorrecto. Verificá y volvé a ingresarlo:"));
