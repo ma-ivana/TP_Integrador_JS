@@ -29,6 +29,9 @@ alert(`${nombre}, tenemos en promoción los siguientes productos:
 📖 ${producto2}`);
 
 let respuesta1 = prompt(`¿Querés comprar el libro ${producto1}, cuyo precio es $ ${precioProd1}? (SÍ/NO)`);
+
+// recuerden dejar un espacio antes y después de un operador
+// respuesta1 === "SÍ"
 respuesta1 ==="SÍ" && (cantidad1 = prompt(`¿Cuántas unidades querés comprar?`));
 let respuesta2 = prompt(`¿Querés comprar el libro ${producto2}, cuyo precio es $ ${precioProd2}? (SÍ/NO)`);
 respuesta2 ==="SÍ" && (cantidad2 = prompt(`¿Cuántas unidades querés comprar?`));
@@ -66,10 +69,15 @@ Cantidad de cuotas ${cantCuotas}; valor de cada cuota ${valorCuota}`);
 
 respuestaDescuento = prompt(`${nombre}, ¿tenés un código de descuento?`);
 respuestaDescuento ==="SÍ" && (codigoDescuentoIngresado = prompt("Ingresá el código:"));
+
+// Si bien son muy útiles a la hora de corregir nuestro código, 
+// No se deben dejar console.log en el código a entregar. 
+// (Corremos el riesgo de que lo vea un cliente o usuario). 
 console.log(codigoDescuentoIngresado);
 (respuestaDescuento ==="SÍ" && (codigoDescuentoIngresado !== codigoDescuento)) && (codigoDescuentoIngresado = prompt("Código incorrecto. Verificá y volvé a ingresarlo:"));
 
-
+// Si digo que no tengo un código de código de descuento, igual se me aplica
+// Ya que al final no hay un escenario que contemple un mensaje al usuario en caso de que respuestaDescuento sea distinta a "SÍ". 
 totalDescuento = total - (total * descuento);
 
 valorCuotaDescuento = totalDescuento / cantCuotas;
@@ -103,4 +111,6 @@ Total con descuento: AR$ ${totalDescuento}`);
 alert(`${nombre}, muchas gracias por tu compra.
 
 Que disfrutes tu lectura. ♥`);
+
+//Muy buen trabajo 
 
